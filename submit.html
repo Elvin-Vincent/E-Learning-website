@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload</title>
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      
+      // Get the file input element and selected file(s)
+      const fileInput = document.getElementById('fileUpload');
+      const files = fileInput.files;
+      
+      // Perform any necessary validation on the files
+      
+      // Assuming the validation is successful, redirect to the next page
+      window.location.href = 'upload.html';
+    }
+  </script>
+</head>
+<body>
+  <h1>File Upload</h1>
+  <form onsubmit="handleFormSubmit(event)" enctype="multipart/form-data">
+    <input type="file" name="fileUpload" id="fileUpload">
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
