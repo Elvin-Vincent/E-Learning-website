@@ -1,2 +1,0 @@
-# college-website
-Educational purpose 
